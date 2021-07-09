@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Model Box</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet">
+    <style>
+        
+        body {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            height: 100vh;
+            font-family: 'Open Sans', sans-serif;
+            
+        }
+
+        .container {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
+            
+
+
+        }
+
+        .box {
+            max-width: 360px;
+            max-height: 600px;
+            border: 1px #c4c4c4 solid;
+            margin-top: 15px;
+            border-radius: 4px;
+            background: #ffff;
+            display: block;
+            position: relative;
+            overflow-y: unset;
+            box-shadow: 4px 5px 5px -1px rgba(0, 0, 0, 0.5);
+        }
+        .box .box-footer{
+            background-color: #c4c4c4;
+            height: 40px;
+            overflow-y: scroll;
+        }
+        .box .box-footer .btn{
+            display: none;
+            color: white;
+            background: cornflowerblue ;
+            text-decoration: none;
+            border: 0;
+            border-radius: 4px;
+            width: 70px;
+            height: 30px;
+            text-align: center;
+            margin-top: 5px;
+            margin-right: 5px;
+            position: absolute;
+            right: 0;
+            cursor: pointer;
+        }
+        .box .box-footer .btn:hover{
+            color: cornflowerblue;
+            background: white ;
+        }
+        .box h1 {
+            background: cornflowerblue;
+            text-align: center;
+            margin-top: 0;
+            padding: 10px 0;
+            color: white;
+        }
+
+        .box p {
+            text-align: justify;
+            padding: 0 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="box">
+            <h1>Lorem</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia omnis minima velit obcaecati, commodi
+                ipsum consequuntur adipisci quas nostrum harum corrupti nulla eum, quasi esse sed et praesentium
+                voluptate quia!,</p>
+                <div class="box-footer">
+                    <button class="btn">Salvar</button>
+                </div>
+        </div>
+        
+    </div>
+</body>
+
+</html>
